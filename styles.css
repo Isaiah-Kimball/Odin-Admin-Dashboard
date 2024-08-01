@@ -7,12 +7,11 @@ body{
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
     max-height: 100vh; 
 }
 
 div{
-    /*border: 12px solid black;*/
     margin: 0;
     padding: 0;
 }
@@ -20,8 +19,8 @@ div{
 /*Header*/
 
 .header{
-    grid-column: 2/2;
-    grid-row: 1/1;
+    grid-column: 2/3;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
 }
@@ -76,7 +75,6 @@ input{
 
 #cat2{
     margin-right: 12px;
-    
 }
 
 .label-header{
@@ -108,19 +106,11 @@ input{
     margin-right: 18px;
 }
 
-
-
-.main-content{
-    grid-row: 2/2;
-    grid-column: 2/2;
-    
-}
-
 /*Nav part*/
 
 .nav{
-    grid-row: 1/2;
-    height: 98vh;
+    grid-column: 1/2;
+    grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: blue;
@@ -156,4 +146,24 @@ input{
 
 #Communities, #img-Communities{
     padding-bottom: 72px;
+}
+
+/**/
+
+.main-content{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-content div{
+    border: 12px solid black;
+}
+
+
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
